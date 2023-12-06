@@ -1,0 +1,126 @@
+/* Googla Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=WindSong:wght@400;500&display=swap");
+
+/* Reset CSS */
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Main Root */
+:root {
+  /* Fonts */
+  --poppins: "Poppins", sans-serif;
+  --windsong: "WindSong", cursive;
+  /* Color */
+  --basic: #fff;
+  --dark: #191919;
+  --grey: #ecf4d6;
+  --primary: #ff9b9b;
+}
+
+body,
+html {
+  font-family: var(--poppins);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+}
+
+.row {
+  width: 100%;
+  height: 100%;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-grid {
+  display: grid;
+  gap: 1em;
+}
+
+/* Section Nav */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+nav a {
+  color: var(--basic);
+  display: inline-block;
+  padding: 1em 0;
+}
+
+.navigasi {
+  gap: 1em;
+}
+
+.navigasi a {
+  padding: 0 1em;
+}
+
+.hamBtn {
+  display: none;
+}
+
+/* End Section Nav */
+
+/* Section Hero */
+
+#hero {
+  width: 100%;
+  height: 600px;
+  background: url(https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+#hero::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#hero .row {
+  justify-content: center;
+  position: relative;
+  color: var(--basic);
+  z-index: 1;
+}
+
+#hero h1 {
+  font-family: var(--windsong);
+}
+
+/* End Section Hero */
+
+/* Section About */
+
+#about {
+  height: 100vh;
+}
+
+/* End Section About */
