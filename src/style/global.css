@@ -194,7 +194,6 @@ nav a {
 .service-dtl {
   justify-content: flex-start;
   gap: 1em;
-  align-items: flex-start;
 }
 
 .service-dtl img {
