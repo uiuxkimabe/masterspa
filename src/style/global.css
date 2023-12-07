@@ -170,20 +170,37 @@ nav a {
   color: var(--grey);
 }
 
-#about img {
+#about .row:first-child img {
   width: 100%;
   border-radius: 0 0 0 30px;
 }
 
 .service {
-  margin-top: 2em;
-  gap: 1em;
+  margin-top: 3em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+  gap: 2em;
+}
+
+.service img {
+  width: 100%;
 }
 
 .service figcaption {
   padding: 1em;
-  border: 1px solid #7c7c7c;
-  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.service-dtl {
+  justify-content: flex-start;
+  gap: 1em;
+  align-items: flex-start;
+}
+
+.service-dtl img {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  max-width: 100px;
 }
 
 /* End Section About */
