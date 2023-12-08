@@ -103,9 +103,8 @@ nav a {
 #hero {
   height: 600px;
   text-align: center;
-  background: url(https://images.unsplash.com/photo-1596178060671-7a80dc8059ea?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D),
-    no-repeat;
-  background-position: bottom;
+  background: url(../assets/spa-1.jpg), no-repeat;
+  background-position: center;
   background-attachment: fixed;
   color: var(--basic);
   overflow: hidden;
@@ -212,7 +211,6 @@ nav a {
 }
 
 .service-dtl img {
-  aspect-ratio: 1/1;
   border-radius: 50%;
   max-width: 100px;
 }
@@ -222,8 +220,7 @@ nav a {
 /* Section Partner */
 
 #partner {
-  background: url(https://grandussu.com/src/assets/rooms/bougenville/BOUGENVILLE%201.jpg),
-    no-repeat;
+  background: url(../assets/body-treatment-3.jpg), no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -304,7 +301,13 @@ nav a {
 
 .list-hotel ul a {
   color: var(--basic);
-  display: block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 1em;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
 }
 
@@ -315,7 +318,6 @@ nav a {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: flex-end;
-  padding: 1em;
 }
 
 .list-hotel ul li:first-child {
@@ -325,8 +327,7 @@ nav a {
       rgba(0, 0, 0, 0.6727065826330532) 50%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url(https://images.unsplash.com/photo-1563911302283-d2bc129e7570?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D),
-    no-repeat;
+    url(../assets/grandussu.jpg), no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -338,8 +339,7 @@ nav a {
       rgba(0, 0, 0, 0.6727065826330532) 50%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url(https://images.unsplash.com/photo-1563911302283-d2bc129e7570?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D),
-    no-repeat;
+    url(../assets/m-one.jpg), no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -351,8 +351,7 @@ nav a {
       rgba(0, 0, 0, 0.6727065826330532) 50%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url(https://images.unsplash.com/photo-1563911302283-d2bc129e7570?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D),
-    no-repeat;
+    url(../assets/grandussu.jpg), no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -364,8 +363,7 @@ nav a {
       rgba(0, 0, 0, 0.6727065826330532) 50%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url(https://images.unsplash.com/photo-1563911302283-d2bc129e7570?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D),
-    no-repeat;
+    url(../assets/m-one.jpg), no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -391,7 +389,7 @@ nav a {
   margin: 1em auto;
   background-color: var(--dark);
 }
-
+/* 
 #package .filter {
   justify-content: center;
   gap: 1em;
@@ -407,7 +405,7 @@ nav a {
 #package .filter li.active {
   background-color: var(--dark);
   color: var(--basic);
-}
+} */
 
 #package .row {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -418,8 +416,8 @@ nav a {
 #package .card {
   text-align: left;
   padding: 1em;
-  border: 1px solid var(--grey);
   border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(46, 46, 46, 0.2);
 }
 
 #package .card .spa-img {
