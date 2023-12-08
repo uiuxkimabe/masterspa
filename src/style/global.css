@@ -430,15 +430,14 @@ nav a {
 }
 
 #package .order-btn {
-  float: right;
   margin-top: 1em;
   padding: 10px;
-  width: 50%;
+  width: 100%;
   border-radius: 50px;
   border: none;
   background-color: var(--dark);
   color: var(--basic);
-  justify-content: space-around;
+  justify-content: center;
   gap: 10px;
   font-size: 1.1rem;
 }
