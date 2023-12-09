@@ -28,6 +28,11 @@
     />
     <!-- Animate On Scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/185a3acc44.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Section Navbar -->
@@ -67,7 +72,7 @@
                 yang memanjakan tubuh dan pikiran Anda.
               </p>
             </div>
-            <button type="button" data-aos="fade-up" data-aos-delay="100">
+            <button type="button" class="order-btn" data-aos="fade-up" data-aos-delay="100">
               Pesan Sekarang
             </button>
           </figcaption>
@@ -224,6 +229,38 @@
               bagi relasi kami. Demi memuaskan pelanggan hotel untuk berelaksasi
               dan menikmati atmosfir lingkungan yang nyaman.
             </p>
+            <figcaption class="social-media">
+              <h2>Ayo Terhubung</h2>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.instagram.com/spa_dan_sauna_official/"
+                    class="d-flex socmed"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                    <p>spa_dan_sauna_official</p>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.tiktok.com/@spapuncak"
+                    class="d-flex socmed"
+                  >
+                    <i class="fa-brands fa-tiktok"></i>
+                    <p>spapuncak</p>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.tiktok.com/@spapuncak"
+                    class="d-flex socmed"
+                  >
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>087881236381</p>
+                  </a>
+                </li>
+              </ul>
+            </figcaption>
           </div>
           <div class="col list-hotel" data-aos="fade-down" data-aos-delay="150">
             <ul class="d-flex">
@@ -271,11 +308,6 @@
           <p>Dapatkan penawaran paket terbaik</p>
           <hr />
         </figcaption>
-        <!-- <ul class="d-flex filter" data-aos="fade-down">
-          <li class="active">Semua</li>
-          <li>Massage Relaxaxing</li>
-          <li>Body Treatment</li>
-        </ul> -->
         <div class="row d-grid">
           <div class="card all relax" data-aos="fade-down">
             <img
@@ -527,17 +559,35 @@
             <h3>MASTER SPA</h3>
             <p>Massage Parlour</p>
           </div>
-          <div class="col">
+          <div class="col socialMedia">
             <h3>Social Media</h3>
             <ul>
               <li>
-                <a href="instagrm.com">Instagram</a>
+                <a
+                  href="https://www.instagram.com/spa_dan_sauna_official/"
+                  class="d-flex socmed"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                  <p>spa_dan_sauna_official</p>
+                </a>
               </li>
               <li>
-                <a href="tiktok.com">Tiktok</a>
+                <a
+                  href="https://www.tiktok.com/@spapuncak"
+                  class="d-flex socmed"
+                >
+                  <i class="fa-brands fa-tiktok"></i>
+                  <p>spapuncak</p>
+                </a>
               </li>
               <li>
-                <a href="youtube.com">Youtube</a>
+                <a
+                  href="https://www.tiktok.com/@spapuncak"
+                  class="d-flex socmed"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <p>087881236381</p>
+                </a>
               </li>
             </ul>
           </div>
@@ -593,8 +643,80 @@
         </div>
       </div>
     </footer>
-
     <!-- End Section Footer -->
+
+    <!-- Section Booking -->
+    <section id="booking">
+      <div class="container">
+        <div class="row d-flex">
+          <form action="">
+            <figcaption class="d-grid">
+              <div class="col">
+                <label for="customer">Nama Pelanggan</label><br />
+                <input type="text" placeholder="Ex. John Doe" />
+              </div>
+              <div class="col">
+                <label for="orderDate">Tanggal Pesan</label><br />
+                <input type="date" />
+              </div>
+            </figcaption>
+            <figcaption class="d-grid">
+              <div class="col">
+                <label for="orderLocation">Lokasi</label>
+                <select name="place" id="place">
+                  <option value="Bogor">Bogor</option>
+                  <option value="Jakarta">Jakarta</option>
+                </select>
+              </div>
+              <div class="col">
+                <label for="placeChoose">Tempat Pilihan</label>
+                <select name="choose" id="choose">
+                  <option value="Grand Ussu">Master Spa (Grand Ussu)</option>
+                  <option value="M One">Master Spa (M-One)</option>
+                </select>
+              </div>
+            </figcaption>
+            <figcaption>
+              <label for="placeChoose">Pilih Paket</label>
+              <select name="choose" id="choose">
+                <option value="Msg Jav 90">
+                  Massage tradisional Javanese (90 Minutes) <b>315 K</b>
+                </option>
+                <option value="Msg Jav 120">
+                  Massage tradisional Javanese (120 Minutes) <b>400 K</b>
+                </option>
+                <option value="Msg Tr 90">
+                  Tradisional Massage (90 Minutes) <b>400 K</b>
+                </option>
+                <option value="Msg Scrub 120">
+                  Full Body Massage & Scrub (120 Minutes) <b>425 K</b>
+                </option>
+                <option value="Msg Reflexi 120">
+                  Full Body Massage & Reflexi (120 Minutes) <b>345 K</b>
+                </option>
+                <option value="Msg Hot Stone 90">
+                  Hot Stone Massage (90 Minutes) <b>400 K</b>
+                </option>
+              </select>
+            </figcaption>
+            <figcaption>
+              <label for="addMsg">Pesan Tambahan</label> <br />
+              <input
+                name="massageAdditional"
+                id="massage"
+                cols="30"
+                rows="10"
+              ></input>
+            </figcaption>
+            <button type="submit" class="booking-confirm">
+              Pesan Sekarang
+            </button>
+            <button type="button" class="closeBooking booking-confirm">Tutup</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Booking -->
 
     <!-- 👇 javascript code file 👇 -->
     <script src="./src/js/index.js"></script>

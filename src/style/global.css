@@ -283,6 +283,44 @@ nav a {
   text-align: justify;
 }
 
+.social-media {
+  margin-top: 1.5em;
+}
+
+.social-media ul {
+  margin-top: 1em;
+}
+
+.social-media ul li {
+  margin: 1em 0;
+}
+
+.social-media ul li a {
+  color: var(--basic);
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 1.2rem;
+  max-width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-media ul li a::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  background-color: var(--primary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+.social-media ul li:hover a::after {
+  width: 100%;
+}
+
 .list-hotel {
   width: 100%;
   overflow-x: scroll;
@@ -389,23 +427,6 @@ nav a {
   margin: 1em auto;
   background-color: var(--dark);
 }
-/* 
-#package .filter {
-  justify-content: center;
-  gap: 1em;
-  margin: 2em 0;
-}
-
-#package .filter li {
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid var(--dark);
-}
-
-#package .filter li.active {
-  background-color: var(--dark);
-  color: var(--basic);
-} */
 
 #package .row {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -537,7 +558,84 @@ footer .row:last-child {
   border-top: 1px solid var(--grey);
 }
 
+footer .socialMedia ul li {
+  margin: 8px 0;
+}
+
+footer .socialMedia ul li a {
+  justify-content: flex-start;
+  gap: 8px;
+}
+
 /* End Section Footer */
+
+/* Section Booking */
+
+#booking {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.6727065826330532);
+  transform: translateY(-100%);
+  transition: 0.3s ease-in-out;
+}
+
+#booking.popUp {
+  transform: translateY(0);
+}
+
+#booking .row {
+  justify-content: center;
+}
+
+#booking form {
+  width: 100%;
+  padding: 2em;
+  border-radius: 20px;
+  background-color: var(--basic);
+}
+
+#booking form figcaption {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.b-option label {
+  width: 100%;
+  border: 1px solid black;
+}
+
+#booking input,
+select,
+option {
+  margin: 8px 0;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--grey);
+}
+
+#booking button.booking-confirm {
+  width: 100%;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: var(--primary);
+  border: none;
+  color: var(--basic);
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+.closeBooking {
+  background-color: var(--dark) !important;
+  color: var(--basic) !important;
+}
+
+/* End Section Booking */
 
 /* RESONSIVE */
 /* DESKTOP VIEW */

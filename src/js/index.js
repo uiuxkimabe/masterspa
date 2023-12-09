@@ -14,3 +14,17 @@ navigasiLink.forEach((element) => {
     navigasi.classList.toggle("popUp");
   });
 });
+
+// Btn Order to Open Booking Form
+const orderBtn = document.querySelectorAll(".order-btn");
+const bookingForm = document.getElementById("booking");
+const closeBooking = document.querySelector(".closeBooking");
+console.info(orderBtn);
+orderBtn.forEach((element) => {
+  element.addEventListener("click", () => {
+    bookingForm.classList.toggle("popUp");
+  });
+});
+closeBooking.addEventListener("click", () => {
+  bookingForm.classList.toggle("popUp");
+});
