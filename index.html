@@ -494,17 +494,17 @@
           <div class="col book-form" data-aos="fade-up" data-aos-delay="100">
             <form>
               <figcaption>
-                <label for="Name">Name</label> <br />
-                <input type="text" name="name" placeholder="Name" class="pelanggan" />
+                <label for="pelanggan">Name</label> <br />
+                <input type="text" name="pelanggan" placeholder="Name" class="pelanggan" />
               </figcaption>
               <figcaption class="d-flex">
                 <div class="col">
-                  <label for="Date">Date Order</label><br />
-                  <input type="date" name="tanggal" class="tanggalbooking" />
+                  <label for="tanggalorder">Date Order</label><br />
+                  <input type="date" name="tanggalbooking" class="tanggalbooking" />
                 </div>
                 <div class="col">
-                  <label for="Location">Location</label><br />
-                  <select name="location" class="tempat">
+                  <label for="tempat">Location</label><br />
+                  <select name="tempat" class="tempat">
                     <option value="Grand Ussu Hotel">Grand Ussu Hotel</option>
                     <option value="M-One Hotel">M-One Hotel</option>
                   </select>
@@ -512,7 +512,7 @@
               </figcaption>
               <figcaption>
                 <label for="Massage Package">Massage Package</label><br />
-                <select name="massage" class="listSpa">
+                <select name="listSpa" class="listSpa">
                   <option value="none">
                     -- Tidak Ada ---
                   </option>
@@ -660,35 +660,27 @@
     <section id="booking">
       <div class="container">
         <div class="row d-flex">
-          <form action="">
+          <form>
             <figcaption class="d-grid">
               <div class="col">
-                <label for="customer">Nama Pelanggan</label><br />
+                <label>Nama Pelanggan</label><br />
                 <input type="text" placeholder="Ex. John Doe" id="customer-name" />
               </div>
               <div class="col">
-                <label for="orderDate">Tanggal Pesan</label><br />
+                <label >Tanggal Pesan</label><br />
                 <input type="date" class="date-order" />
               </div>
             </figcaption>
             <figcaption class="d-grid">
               <div class="col">
-                <label for="orderLocation">Lokasi</label>
-                <select name="location" id="location">
-                  <option value="Bogor">Bogor</option>
-                  <option value="Jakarta">Jakarta</option>
-                </select>
-              </div>
-              <div class="col">
-                <label for="placeChoose">Tempat Pilihan</label>
+                <label >Pilih Tempat</label>
                 <select name="place" id="place">
                   <option value="Grand Ussu">Master Spa (Grand Ussu)</option>
                   <option value="M One">Master Spa (M-One)</option>
                 </select>
               </div>
-            </figcaption>
-            <figcaption>
-              <label for="packageChoose">Pilih Paket</label>
+              <div class="col">
+                <label >Pilih Paket</label>
               <select name="package" id="packageMsg">
                 <option value="Msg Jav 90">
                   Massage tradisional Javanese (90 Minutes) <b>315 K</b>
@@ -709,9 +701,10 @@
                   Hot Stone Massage (90 Minutes) <b>400 K</b>
                 </option>
               </select>
+              </div>
             </figcaption>
             <figcaption>
-              <label for="addMsg">Pesan Tambahan</label> <br />
+              <label >Pesan Tambahan</label> <br />
               <input
                 name="massageAdditional"
                 id="massage"
@@ -722,7 +715,6 @@
             <button type="submit" class="orderNow booking-confirm">
               Pesan Sekarang
             </button>
-            
             <button type="button" class="closeBooking booking-confirm">Tutup</button>
           </form>
         </div>
