@@ -39,10 +39,8 @@ function wa() {
     "https://wa.me/6281385532791?text=Halo%20Master%20Spa%2C%20Saya%20Mau%20Konfirmasi%20Pemesanan%20Saya%20Ya%20!%0ANama%20%3A%20*" +
     pelanggan.value +
     "*%0ATanggal%20%3A%20*" +
-    tanggal.value +
+    tanggalBooking.value +
     "*%0ALokasi%20%3A%20*" +
-    tempat.value +
-    "*%0ATempat%20PIlihan%20%3A%20*" +
     tempat.value +
     "*%0APilih%20Paket%20%3A%20*" +
     listSpa.value +
