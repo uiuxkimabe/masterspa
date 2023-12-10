@@ -72,9 +72,9 @@
                 yang memanjakan tubuh dan pikiran Anda.
               </p>
             </div>
-            <button type="button" class="order-btn" data-aos="fade-up" data-aos-delay="100">
+            <a href="#contact" class="book-contact" data-aos="fade-up" data-aos-delay="100">
               Pesan Sekarang
-            </button>
+            </a>
           </figcaption>
         </div>
       </div>
@@ -495,16 +495,16 @@
             <form>
               <figcaption>
                 <label for="Name">Name</label> <br />
-                <input type="text" name="name" placeholder="Name" />
+                <input type="text" name="name" placeholder="Name" class="pelanggan" />
               </figcaption>
               <figcaption class="d-flex">
                 <div class="col">
                   <label for="Date">Date Order</label><br />
-                  <input type="date" name="tanggal" id="book-date" />
+                  <input type="date" name="tanggal" class="tanggalbooking" />
                 </div>
                 <div class="col">
                   <label for="Location">Location</label><br />
-                  <select name="location" id="location">
+                  <select name="location" class="tempat">
                     <option value="Grand Ussu Hotel">Grand Ussu Hotel</option>
                     <option value="M-One Hotel">M-One Hotel</option>
                   </select>
@@ -512,7 +512,10 @@
               </figcaption>
               <figcaption>
                 <label for="Massage Package">Massage Package</label><br />
-                <select name="massage" id="massage-list">
+                <select name="massage" class="listSpa">
+                  <option value="none">
+                    -- Tidak Ada ---
+                  </option>
                   <option value="Msg Jav 90">
                     Massage tradisional Javanese (90 Minutes) <b>315 K</b>
                   </option>
@@ -533,7 +536,7 @@
                   </option>
                 </select>
               </figcaption>
-              <button type="button" class="booking-confirm">Confirm</button>
+              <button type="button" class="booking-confirm" id="tombolBooking">Confirm</button>
             </form>
           </div>
           <div class="col" data-aos="fade-down" data-aos-delay="100">
@@ -661,32 +664,32 @@
             <figcaption class="d-grid">
               <div class="col">
                 <label for="customer">Nama Pelanggan</label><br />
-                <input type="text" placeholder="Ex. John Doe" />
+                <input type="text" placeholder="Ex. John Doe" id="customer-name" />
               </div>
               <div class="col">
                 <label for="orderDate">Tanggal Pesan</label><br />
-                <input type="date" />
+                <input type="date" class="date-order" />
               </div>
             </figcaption>
             <figcaption class="d-grid">
               <div class="col">
                 <label for="orderLocation">Lokasi</label>
-                <select name="place" id="place">
+                <select name="location" id="location">
                   <option value="Bogor">Bogor</option>
                   <option value="Jakarta">Jakarta</option>
                 </select>
               </div>
               <div class="col">
                 <label for="placeChoose">Tempat Pilihan</label>
-                <select name="choose" id="choose">
+                <select name="place" id="place">
                   <option value="Grand Ussu">Master Spa (Grand Ussu)</option>
                   <option value="M One">Master Spa (M-One)</option>
                 </select>
               </div>
             </figcaption>
             <figcaption>
-              <label for="placeChoose">Pilih Paket</label>
-              <select name="choose" id="choose">
+              <label for="packageChoose">Pilih Paket</label>
+              <select name="package" id="packageMsg">
                 <option value="Msg Jav 90">
                   Massage tradisional Javanese (90 Minutes) <b>315 K</b>
                 </option>
@@ -716,9 +719,10 @@
                 rows="10"
               ></input>
             </figcaption>
-            <button type="submit" class="booking-confirm">
+            <button type="submit" class="orderNow booking-confirm">
               Pesan Sekarang
             </button>
+            
             <button type="button" class="closeBooking booking-confirm">Tutup</button>
           </form>
         </div>

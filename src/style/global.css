@@ -138,14 +138,14 @@ nav a {
   color: var(--basic);
 }
 
-#hero button {
-  padding: 1em 2em;
-  background: none;
-  border: none;
-  border-radius: 10px;
+#hero a.book-contact {
+  display: block;
+  margin: 1em auto;
+  max-width: 300px;
   color: var(--basic);
-  font-weight: 600;
   background-color: var(--primary);
+  padding: 1em 2em;
+  border-radius: 10px;
 }
 
 /* End Section Hero */
