@@ -36,7 +36,7 @@ const bookingConfirm = document.getElementById("tombolBooking");
 
 function wa() {
   const url =
-    "https://wa.me/6281385532791?text=Halo%20Master%20Spa%2C%20Saya%20Mau%20Konfirmasi%20Pemesanan%20Saya%20Ya%20!%0ANama%20%3A%20*" +
+    "https://wa.me/6287881236381?text=Halo%20Master%20Spa%2C%20Saya%20Mau%20Konfirmasi%20Pemesanan%20Saya%20Ya%20!%0ANama%20%3A%20*" +
     pelanggan.value +
     "*%0ATanggal%20%3A%20*" +
     tanggalBooking.value +
@@ -64,7 +64,7 @@ const btnConfirm = document.querySelector(".orderNow");
 
 function whatsappOrder() {
   const link =
-    "https://wa.me/6281385532791?text=Halo%20Master%20Spa%2C%20Saya%20Mau%20Konfirmasi%20Pemesanan%20Saya%20Ya%20!%0ANama%20%3A%20*" +
+    "https://wa.me/6287881236381?text=Halo%20Master%20Spa%2C%20Saya%20Mau%20Konfirmasi%20Pemesanan%20Saya%20Ya%20!%0ANama%20%3A%20*" +
     customerName.value +
     "*%0ATanggal%20%3A%20*" +
     dateOrder.value +
