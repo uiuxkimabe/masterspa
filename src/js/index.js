@@ -76,11 +76,40 @@ function whatsappOrder() {
     addMsg.value +
     "*%0A%0ATerima%20Kasih%20!";
 
-  bookForm.reset();
-  bookingConfirm.classList.toggle("popUp");
+  // bookForm.reset();
+  // bookingConfirm.classList.toggle("popUp");
   window.open(link);
 }
 
 btnConfirm.addEventListener("click", () => {
   whatsappOrder();
+});
+
+// Submit to Google Form
+
+// Booking Order on Card
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbzdLCqzQDymtiIXw1wXTZ47e0cNHq-B2NAzmMVK_i_iMxafhhObeAR4JQXUuOwdRPM/exec";
+const form = document.forms["submit-to-google-sheet"];
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => console.log("Success!", response))
+    .catch((error) => console.error("Error!", error.message));
+  // reset form
+  form.reset();
+});
+
+// Booking Order on Contact
+
+const contactBooking = document.forms["contact-booking"];
+
+contactBooking.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(contactBooking) })
+    .then((response) => console.log("Success!", response))
+    .catch((error) => console.error("Error!", error.message));
+  // reset form
+  contactBooking.reset();
 });

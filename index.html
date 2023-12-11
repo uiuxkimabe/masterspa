@@ -16,7 +16,9 @@
     <!-- Keyword Website -->
     <meta
       name="keywords"
-      content="spa massage, vip spa massage, asian spa massage, body spa massage,asian spa massage near me, spa and massage near me, spa massage bogor, spa massage di bogor, spa massage puncak,spa puncak,massage puncak,massage puncak bogor,spa puncak kaskus,body massage puncak alam,spa in puncak alam,spa di puncak bogor,massage di puncak,spa di puncak,q spa massage,v spa massage"
+      content="master spa, master spa grand ussu, master spa puncak,spa massage, spa di puncak, tempat spa di puncak bogor,
+      tempat spa di puncak,spa di puncak bogor, spa puncak bogor,
+      spa cipanas, spa puncak, vip spa massage, asian spa massage, body spa massage,asian spa massage near me, spa and massage near me, spa massage bogor, spa massage di bogor, spa massage puncak,spa puncak,massage puncak,massage puncak bogor,spa puncak kaskus,body massage puncak alam,spa in puncak alam,spa di puncak bogor,massage di puncak,spa di puncak,q spa massage,v spa massage"
     />
     <title>✨ Master Spa ✨</title>
     <!-- 👇 css code file 👇 -->
@@ -492,27 +494,27 @@
         </figcaption>
         <div class="row d-grid">
           <div class="col book-form" data-aos="fade-up" data-aos-delay="100">
-            <form>
+            <form name="submit-to-google-sheet">
               <figcaption>
                 <label for="pelanggan">Name</label> <br />
-                <input type="text" name="pelanggan" placeholder="Name" class="pelanggan" />
+                <input type="text" name="nama" placeholder="Name" class="pelanggan" />
               </figcaption>
               <figcaption class="d-flex">
                 <div class="col">
                   <label for="tanggalorder">Date Order</label><br />
-                  <input type="date" name="tanggalbooking" class="tanggalbooking" />
+                  <input type="date" name="tanggal" class="tanggalbooking" />
                 </div>
                 <div class="col">
                   <label for="tempat">Location</label><br />
                   <select name="tempat" class="tempat">
-                    <option value="Grand Ussu Hotel">Grand Ussu Hotel</option>
+                    <option value="Grand Ussu">Grand Ussu Hotel</option>
                     <option value="M-One Hotel">M-One Hotel</option>
                   </select>
                 </div>
               </figcaption>
               <figcaption>
                 <label for="Massage Package">Massage Package</label><br />
-                <select name="listSpa" class="listSpa">
+                <select name="paket" class="listSpa">
                   <option value="none">
                     -- Tidak Ada ---
                   </option>
@@ -536,7 +538,7 @@
                   </option>
                 </select>
               </figcaption>
-              <button type="button" class="booking-confirm" id="tombolBooking">Confirm</button>
+              <button type="submit" class="booking-confirm" id="tombolBooking">Confirm</button>
             </form>
           </div>
           <div class="col" data-aos="fade-down" data-aos-delay="100">
@@ -660,28 +662,28 @@
     <section id="booking">
       <div class="container">
         <div class="row d-flex">
-          <form>
+          <form name="contact-booking">
             <figcaption class="d-grid">
               <div class="col">
                 <label>Nama Pelanggan</label><br />
-                <input type="text" placeholder="Ex. John Doe" id="customer-name" />
+                <input type="text" placeholder="Ex. John Doe" name="nama" id="customer-name" />
               </div>
               <div class="col">
                 <label >Tanggal Pesan</label><br />
-                <input type="date" class="date-order" />
+                <input type="date" name="tanggal" class="date-order" />
               </div>
             </figcaption>
             <figcaption class="d-grid">
               <div class="col">
                 <label >Pilih Tempat</label>
-                <select name="place" id="place">
+                <select name="tempat" id="place">
                   <option value="Grand Ussu">Master Spa (Grand Ussu)</option>
                   <option value="M One">Master Spa (M-One)</option>
                 </select>
               </div>
               <div class="col">
                 <label >Pilih Paket</label>
-              <select name="package" id="packageMsg">
+              <select name="paket" id="packageMsg">
                 <option value="Msg Jav 90">
                   Massage tradisional Javanese (90 Minutes) <b>315 K</b>
                 </option>
@@ -706,7 +708,7 @@
             <figcaption>
               <label >Pesan Tambahan</label> <br />
               <input
-                name="massageAdditional"
+                name="pesan"
                 id="massage"
                 cols="30"
                 rows="10"
